@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Survey Form</title></head>
+<body><header>
+  <h1 id="title">Fun Survey Form</h1>
+  <p id="description">a form about how much fun you are having  fell free to answer</p></header>
+  <form id ="survey-form"><div class="form-element">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" name = "name" id="name" placeholder="enter name here" required></div>
+    <div class="form-element">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name = "email" id="email" placeholder="enter email here" required></div>
+    <div class="form-element">
+    <label id="number-label" for="measure">Fun measure</label>
+    <input type="number" name = "measure" id="number" placeholder="fun" min="0" max="5" required></div>
+    <div class="form-element">
+      <p>when did you had most fun</p>
+    <select  name="period" id="dropdown"  required>
+      <option disabled selected value>Select most fun period</option>
+      <option value="high-school">High school</option>
+      <option value="university">University</option>
+      <option value="childhood">No school</option>
+      <option value="NA">No mention</option></select>
+        
+      </div>
+   <div class="form-element"><label>
+    <input type="radio" name = "radiofield" value="bored" checked>bored</label>
+     <label>
+      <input type="radio" name="radiofield" value="notbored">
+       not bored</label>
+       <label>
+      <input type="radio" name="radiofield" value="notans">
+       not ans</label>
+    </div>
+    <div class="form-group">
+<p>write anything</p>
+<textarea id="comments" class="input-textarea" name="comment" placeholder="Enteranything"></textarea>
+</div>
+    <div class="form-group">
+      <p>why free codecamp</p>
+      <label><input name="prefer" value="interactive" type="checkbox" class="input-checkbox">Interactive</label>
+      <label><input name="prefer" value="knowelgable" type="checkbox" class="input-checkbox">knowledege</label>
+      <label><input name="prefer" value="SIMPLE" type="checkbox" class="input-checkbox">simple</label>
+    </div>
+    <div class = "form-group">
+<button type="submit" id="submit" class="submit-button">
+Submit
+</button>
+    </div></form></body></html>
